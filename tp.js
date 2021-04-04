@@ -6,21 +6,17 @@ function contarVocales (texto){
   if(typeof texto === 'string'){
     if(texto && texto.length){
       numeroVocales = texto.match(/[aeiou]/gi)
-      console.log('es una cadena mayor a cero')
       if(numeroVocales === null){
-        console.log('es null debo retoranar 0')
         return 0
       }
       return numeroVocales.length
       
     }
     if(texto.length === 0){
-      console.log('vacia')
       return 0
     }
   } 
   else{
-    console.log('no es string')
     return -1
   }
       
