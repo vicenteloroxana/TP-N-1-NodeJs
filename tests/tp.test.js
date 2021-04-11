@@ -33,52 +33,52 @@ describe('url repo github', function() {
  });
 });
 
-// describe('clase en ES6', function() {
-//   it('debería retornar una clase', function() {
-//     expect(typeof crearClase()).toEqual('function');
-//   });
+describe('clase en ES6', function() {
+  it('debería retornar una clase', function() {
+    expect(typeof crearClase()).toEqual('function');
+  });
 
-//   it('debería devolver la cantidad de instancias adecuada', function() {
-//    const Clase = crearClase()
-//    new Clase()
-//    new Clase()
-//    new Clase()
-//    expect(Clase.contadorInstancias).toEqual(3);
-//   });
+  it('debería devolver la cantidad de instancias adecuada', function() {
+   const Clase = crearClase()
+   new Clase()
+   new Clase()
+   new Clase()
+   expect(Clase.contadorInstancias).toEqual(3);
+  });
 
-//   it('Los métodos deberían devolver -1 para un texto no válido', function() {
-//     const Clase = crearClase()
-//     const objeto = new Clase()
-//     expect(objeto.contadorPalabras()).toEqual(-1);
-//     expect(objeto.hayNumeros()).toEqual(-1);
-//    });
+  it('Los métodos deberían devolver -1 para un texto no válido', function() {
+    const Clase = crearClase()
+    const objeto = new Clase()
+    expect(objeto.contadorPalabras()).toEqual(-1);
+    expect(objeto.hayNumeros()).toEqual(-1);
+   });
 
-//    it('El método contadorPalabras debe devolver un valor adecuado', function() {
-//     const Clase = crearClase()
+   it('El método contadorPalabras debe devolver un valor adecuado', function() {
+    const Clase = crearClase()
 
-//     let objeto = new Clase('Hola mundo como están')
-//     expect(objeto.contadorPalabras()).toEqual(4);
+    let objeto = new Clase('Hola mundo como están')
+    expect(objeto.contadorPalabras()).toEqual(4);
     
-//     objeto = new Clase('')
-//     expect(objeto.contadorPalabras()).toEqual(0);
+    objeto = new Clase('')
+    expect(objeto.contadorPalabras()).toEqual(0);
     
-//     objeto = new Clase('Hola')
-//     expect(objeto.contadorPalabras()).toEqual(1);
-//    });
+    objeto = new Clase('Hola')
+    expect(objeto.contadorPalabras()).toEqual(1);
+   });
 
-//    it('El método hayNumeros debe devolver un valor adecuado', function() {
-//     const Clase = crearClase()
+   it('El método hayNumeros debe devolver un valor adecuado', function() {
+    const Clase = crearClase()
 
-//     let objeto = new Clase('Hola mundo como están')
-//     expect(objeto.hayNumeros()).toBe(false);
+    let objeto = new Clase('Hola mundo como están')
+    expect(objeto.hayNumeros()).toBe(false);
     
-//     objeto = new Clase('')
-//     expect(objeto.hayNumeros()).toBe(false);
+    objeto = new Clase('')
+    expect(objeto.hayNumeros()).toBe(false);
     
-//     objeto = new Clase('Hola mundo como están 1')
-//     expect(objeto.hayNumeros()).toBe(true);
+    objeto = new Clase('Hola mundo como están 1')
+    expect(objeto.hayNumeros()).toBe(true);
     
-//     objeto = new Clase('123')
-//     expect(objeto.hayNumeros()).toBe(true);
-//    });
-// });
+    objeto = new Clase('123')
+    expect(objeto.hayNumeros()).toBe(true);
+   });
+});
